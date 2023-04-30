@@ -13,4 +13,4 @@ def main(page: ft.Page):
     new_task = ft.TextField(hint_text="Να μην ξεχάσω...", color="GRAY", width=250)
     page.add(ft.Row([new_task, ft.ElevatedButton(" + ", on_click=add_handler)]))
 
-ft.app(target=main)
+ft.app(target=main, view=ft.WEB_BROWSER)
